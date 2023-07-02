@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="676.0" prefWidth="1211.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="651.0" fitWidth="891.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym1.jpg" />
+         </image>
+      </ImageView>
+      <Circle layoutX="39.0" layoutY="66.0" opacity="0.71" radius="127.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11137913912534714" green="0.07846003770828247" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.017665691673755646" blue="0.017665691673755646" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Polygon layoutX="203.0" layoutY="315.0" opacity="0.69" points="74.33334350585938, 6.666656494140625, 635.6666870117188, 296.0, -107.0, -194.66665649414062" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11137913912534714" green="0.07846003770828247" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8536585365853658">
+                     <color>
+                        <Color red="0.3947368562221527" green="0.023757310584187508" blue="0.023757310584187508" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.017665691673755646" blue="0.017665691673755646" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Label layoutX="63.0" layoutY="76.0" text="Item Code">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="68.0" layoutY="235.0" text="Description">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="68.0" layoutY="161.0" text="unit Price">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="471.0" layoutY="161.0" text="Qty On Hand">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="62.0" layoutY="104.0" onAction="#codeSearchOnAction" prefHeight="35.0" prefWidth="245.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtDescription" layoutX="62.0" layoutY="255.0" prefHeight="35.0" prefWidth="245.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="445.0" layoutY="98.0" prefHeight="59.0" prefWidth="273.0" style="-fx-background-color: white;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtUnitPrice" layoutX="63.0" layoutY="191.0" prefHeight="35.0" prefWidth="245.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtQtyOnHand" layoutX="454.0" layoutY="191.0" prefHeight="35.0" prefWidth="245.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TableView fx:id="tblItemCart" layoutX="120.0" layoutY="329.0" prefHeight="330.0" prefWidth="763.0" style="-fx-background-color: green;" stylesheets="@../style/Style.css">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="85.66666412353516" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="182.0" text="Description" />
+            <TableColumn fx:id="colItemType" prefWidth="173.0" text="Type Of Item" />
+            <TableColumn fx:id="colQty" prefWidth="88.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="107.0" text="UnitPrice" />
+            <TableColumn fx:id="colDiscount" prefWidth="126.0" text="Discount" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="795.0" layoutY="285.0" onAction="#SaveOnAction" text="SAVE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton layoutX="461.0" layoutY="283.0" onAction="#ClearAllOnAction" text="CLEAR">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton layoutX="573.0" layoutY="283.0" onAction="#UpdateOnAction" text="UPDATE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton layoutX="675.0" layoutY="285.0" onAction="#DeleteOnAction" text="DELETE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXComboBox fx:id="comId" layoutX="470.0" layoutY="112.0" onAction="#ComOnAction" prefHeight="25.0" prefWidth="232.0">
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7054093480110168" green="0.7278265357017517" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8947368264198303" green="0.1946881115436554" blue="0.1946881115436554" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11137913912534714" green="0.07846003770828247" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8536585365853658">
+                     <color>
+                        <Color red="0.3947368562221527" green="0.023757310584187508" blue="0.023757310584187508" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.017665691673755646" blue="0.017665691673755646" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <Label layoutX="454.0" layoutY="76.0" text="Type of item">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Text layoutX="471.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM FORM">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.38388625592417064">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10593323409557343" green="0.1571820229291916" blue="0.6184210777282715" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7105262875556946" green="0.05921052768826485" blue="0.05921052768826485" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Impact" size="56.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDiscountId" layoutX="324.0" layoutY="109.0" prefHeight="6.0" prefWidth="99.0" />
+      <Label layoutX="324.0" layoutY="76.0" text="DISCOUNT%">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8289473652839661" green="0.16118420660495758" blue="0.16118420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="100.0" layoutX="1091.0" layoutY="76.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1035.0" layoutY="89.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1078.0" layoutY="98.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1035.0" layoutY="112.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1035.0" layoutY="134.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1069.0" layoutY="124.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1069.0" layoutY="147.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1035.0" layoutY="161.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15268437564373016" green="0.034965887665748596" blue="0.5394737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07870370149612427" blue="0.07870370149612427" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+   </children>
+</AnchorPane>

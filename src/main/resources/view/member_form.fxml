@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="676.0" prefWidth="1211.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.MemberFormController">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="1096.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="326.0" prefHeight="78.0" prefWidth="206.0" style="-fx-background-color: WHITE;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="59.0" layoutY="426.0" prefHeight="118.0" prefWidth="459.0" style="-fx-background-color: white;" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.34123222748815163" startY="0.014218009478673022">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.05573830381035805" blue="0.05573830381035805" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.8026315569877625" green="0.05573830381035805" blue="0.05573830381035805" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="textName" layoutX="42.0" layoutY="174.0" onMouseClicked="#firstNameClickOnAction" prefHeight="36.0" prefWidth="294.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="textId" layoutX="42.0" layoutY="84.0" onAction="#SerchIdOnAction" onMouseClicked="#idClickOnAction" prefHeight="36.0" prefWidth="294.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <TextField fx:id="txtAddress" layoutX="40.0" layoutY="238.0" onMouseClicked="#addressClickOnAction" prefHeight="36.0" prefWidth="294.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtContact" layoutX="463.0" layoutY="238.0" onMouseClicked="#contatcClickOnAction" prefHeight="36.0" prefWidth="294.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label />
+      <Label layoutX="47.0" layoutY="68.0" text="ID" textFill="#dacccc">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="153.0" text="FIRST NAME" textFill="#dacccc">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="222.0" text="CONTACT" textFill="#dacccc">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="217.0" prefHeight="25.0" prefWidth="142.0" text="ADDRESS" textFill="#dacccc">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="450.0" text="Select Payment Type">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="450.0" text="Select Ex type" textFill="#221c1c">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="917.0" layoutY="193.0" onAction="#SaveOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #8B8FD1;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="917.0" layoutY="302.0" onAction="#DeleteOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #8B8FD1;" styleClass="edge-button" stylesheets="@../style/Style.css" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXComboBox fx:id="comType" layoutX="322.0" layoutY="473.0" onAction="#ComExTypeOnAction" prefHeight="25.0" prefWidth="142.0" promptText="EXSERSIZE TYPE">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7393364928909952">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.09694712718939268">
+                     <color>
+                        <Color red="0.05263157933950424" green="0.028021441772580147" blue="0.028021441772580147" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6578947305679321" green="0.0761452242732048" blue="0.0761452242732048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </focusColor></JFXComboBox>
+      <JFXButton layoutX="917.0" layoutY="402.0" onAction="#updateOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #8B8FD1;" styleClass="edge-button" stylesheets="@../style/Style.css" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="917.0" layoutY="508.0" onAction="#ClearOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #8B8FD1;" styleClass="edge-button" stylesheets="@../style/Style.css" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXComboBox fx:id="comPayment" focusColor="#e6e9f2" layoutX="85.0" layoutY="472.0" onAction="#ComPaymentOnAction" prefHeight="25.0" prefWidth="142.0" promptText="PAYMENT TYPE">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7393364928909952">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05263157933950424" green="0.046296294778585434" blue="0.046296294778585434" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.10365853658536583">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6578947305679321" green="0.0761452242732048" blue="0.0761452242732048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <TextField fx:id="textName1" layoutX="463.0" layoutY="175.0" onMouseClicked="#lastNameClickOnAction" prefHeight="36.0" prefWidth="294.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="473.0" layoutY="153.0" text="LAST NAME" textFill="#dacccc">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNic" layoutX="463.0" layoutY="318.0" onAction="#NicOnAction" onMouseClicked="#nicClickOnAction" prefHeight="36.0" prefWidth="294.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="479.0" layoutY="294.0" text="NIC" textFill="#dacccc">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="323.0" prefHeight="25.0" prefWidth="142.0" text="GENDER">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="422.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" MEMBER FORM" wrappingWidth="289.4979248046875">
+         <fill>
+            <LinearGradient endX="0.8625592417061612" endY="0.8815165876777251">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Georgia Bold" size="32.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="ComGenderId" focusColor="WHITE" layoutX="80.0" layoutY="353.0" onAction="#ComGenderOnAction" prefHeight="25.0" prefWidth="136.0" promptText="gender">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18421052396297455" green="0.10830896347761154" blue="0.10830896347761154" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7236841917037964" green="0.03685428947210312" blue="0.03685428947210312" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <Line endX="237.0" layoutX="493.0" layoutY="40.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="0.8625592417061612" endY="0.8815165876777251">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9210526347160339" green="0.29422515630722046" blue="0.29422515630722046" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke></Line>
+      <Label fx:id="lblExName" layoutX="546.0" layoutY="408.0" prefHeight="50.0" prefWidth="265.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.9907407164573669" blue="0.9907407164573669" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Line endX="237.0" layoutX="643.0" layoutY="485.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="0.8625592417061612" endY="0.8815165876777251">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.33351609110832214" blue="0.33351609110832214" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Label fx:id="lblcheckId" layoutX="51.0" layoutY="126.0" prefHeight="17.0" prefWidth="273.0" textFill="#e10000" />
+      <Label fx:id="lblCheckNic" layoutX="479.0" layoutY="357.0" prefHeight="17.0" prefWidth="273.0" textFill="#d30000" />
+      <Label fx:id="lblcheckContact" layoutX="473.0" layoutY="274.0" prefHeight="17.0" prefWidth="265.0" textFill="RED" />
+   </children>
+</AnchorPane>

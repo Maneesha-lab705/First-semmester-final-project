@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="676.0" prefWidth="1211.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.OrderFormController">
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="1144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym1.jpg" />
+         </image>
+      </ImageView>
+      <Polygon layoutX="92.0" layoutY="597.0" points="-66.66666412353516, 34.66668701171875, 636.0, -349.33331298828125, 530.6666870117188, -184.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.45023696682464465" startY="0.7962085308056872">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.003350389888510108" green="0.06578947603702545" blue="0.04393579438328743" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.11280487804878048">
+                     <color>
+                        <Color red="0.003599999938160181" green="0.05999999865889549" blue="0.039319999516010284" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.19817073170731705">
+                     <color>
+                        <Color red="0.003599999938160181" green="0.05999999865889549" blue="0.039319999516010284" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2291666716337204" green="0.4895833432674408" blue="0.75" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Ellipse layoutX="81.0" layoutY="296.0" radiusX="132.0" radiusY="109.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.48815165876777256" startY="0.5071090047393366">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.07668128609657288" green="0.10526315867900848" blue="0.004385964944958687" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.040268456375838924">
+                     <color>
+                        <Color red="0.12869152426719666" green="0.15789473056793213" blue="0.05482456088066101" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.11585365853658536">
+                     <color>
+                        <Color red="0.14961013197898865" green="0.19736842811107635" blue="0.018274853006005287" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1951219512195122">
+                     <color>
+                        <Color red="0.11239441484212875" green="0.14473684132099152" blue="0.023452728986740112" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2652439024390244">
+                     <color>
+                        <Color red="0.04938271641731262" green="0.06578947603702545" blue="0.004264132585376501" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8402777910232544" green="0.8430920839309692" blue="0.8684210777282715" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Ellipse>
+      <Label layoutX="-1.0" layoutY="1.0" opacity="0.32" prefHeight="718.0" prefWidth="1211.0" style="-fx-background-color: #0652DD;" stylesheets="@../style/Style.css" textFill="#f2e5e5">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <Polygon layoutX="981.0" layoutY="478.0" opacity="0.55" points="-118.0, -254.0, 74.0, 198.0, 40.0, -124.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.45023696682464465" startY="0.36492890995260663">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.008528265170753002" green="0.1315789520740509" blue="0.08851120620965958" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.008528265170753002" green="0.1315789520740509" blue="0.08851120620965958" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.10670731707317073">
+                     <color>
+                        <Color red="0.009100000374019146" green="0.12999999523162842" blue="0.08567000180482864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8100000023841858" green="0.08910000324249268" blue="0.08910000324249268" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Ellipse layoutX="116.0" layoutY="132.0" opacity="0.75" radiusX="240.0" radiusY="191.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.45023696682464465">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.015838205814361572" green="0.1315789520740509" blue="0.09106969088315964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.02296539954841137" green="0.04687296971678734" blue="0.3815789520740509" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Ellipse>
+      <Label fx:id="lbl" layoutX="24.0" layoutY="72.0" text="Order Id:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="122.0" text="Member Id:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbMemberId" focusColor="WHITE" layoutX="132.0" layoutY="118.0" onAction="#cmbMemberOnAction" prefHeight="33.0" prefWidth="203.0" promptText="MEMBERS ID" style="-fx-background-color: white;">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.34210526943206787" green="0.10294834524393082" blue="0.10294834524393082" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8289473652839661" green="0.0767543837428093" blue="0.0767543837428093" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <Label layoutX="37.0" layoutY="319.0" prefHeight="43.0" prefWidth="233.0" style="-fx-background-color: white;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="22.0" layoutY="177.0" text="Member Name:" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="368.0" text="Description:" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="124.0" text="Unit Price:" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="263.0" text="Qty. On Hand:" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="677.0" layoutY="263.0" text="Qty:" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="291.0" text="Code:" textFill="#e4dada">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="47.0" layoutY="324.0" onAction="#cmbItemOnAction" prefHeight="33.0" prefWidth="183.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3790610730648041" green="0.20589669048786163" blue="0.8552631735801697" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.75" green="0.0659722238779068" blue="0.0659722238779068" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="718.0" layoutY="324.0" onAction="#btnAddToCartOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: blue;" text="Add to cart" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../jdbc/jdbc-65/04-thogakade/src/main/resources/img/cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1044.0" layoutY="586.0" onAction="#btnPlaceOrderOnAction" prefHeight="36.0" prefWidth="110.0" style="-fx-background-color: #34495e;" text="Place Order" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../jdbc/jdbc-65/04-thogakade/src/main/resources/img/make_order.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="17.0" layoutY="378.0" />
+      <Label layoutX="599.0" layoutY="180.0" prefHeight="43.0" prefWidth="68.0" style="-fx-background-color: white;" />
+      <Label fx:id="lblOrderId" layoutX="121.0" layoutY="69.0" prefHeight="33.0" prefWidth="112.0" textFill="#c3c3c3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderDate" layoutX="646.0" layoutY="71.0" prefHeight="26.0" prefWidth="16.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMemberName" layoutX="138.0" layoutY="175.0" prefHeight="26.0" prefWidth="152.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="34.0" layoutY="392.0" prefHeight="26.0" prefWidth="238.0" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUnitPrice" layoutX="608.0" layoutY="122.0" prefHeight="26.0" prefWidth="84.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQtyOnHand" layoutX="534.0" layoutY="289.0" prefHeight="26.0" prefWidth="50.0" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="718.0" layoutY="257.0" onAction="#txtQtyOnAction" prefHeight="33.0" prefWidth="66.0" />
+      <Label layoutX="515.0" layoutY="10.0" prefHeight="47.0" prefWidth="236.0" text="ORDER FORM">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Segoe Print" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="759.0" endY="28.0" layoutX="296.0" layoutY="36.0" startX="-82.0" startY="28.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="0.45023696682464465">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6710526347160339" green="0.37902048230171204" blue="0.37902048230171204" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6710526347160339" green="0.37902048230171204" blue="0.37902048230171204" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7989143133163452" green="0.8199999928474426" blue="0.0820000022649765" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <JFXButton buttonType="RAISED" layoutX="820.0" layoutY="111.0" onAction="#btnNewCustomerOnAction" prefHeight="43.0" prefWidth="152.0" style="-fx-background-color: #2ecc71;" text="ADD NEW MEMBER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="19.0" layoutY="225.0" text="Other Buyes:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="508.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIscount :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="135.0" layoutY="293.0" />
+      <Text fill="WHITE" layoutX="681.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDescount" layoutX="608.0" layoutY="193.0" prefHeight="17.0" prefWidth="50.0" />
+      <Polygon layoutY="-2.0" opacity="0.48" points="-5.333333492279053, 40.0, 76.0, 17.666667938232422, -5.333333492279053, -2.3333334922790527" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Label fx:id="lblnetotal" layoutX="1099.0" layoutY="329.0" prefHeight="24.0" prefWidth="79.0" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="1008.0" layoutY="332.0" prefHeight="17.0" prefWidth="73.0" text="NET TOTAL :" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <JFXComboBox fx:id="comOthers" layoutX="135.0" layoutY="226.0" onAction="#comOthersOnAction" prefHeight="25.0" prefWidth="129.0" promptText="OTHERS" style="-fx-background-color: white;" />
+      <TableView fx:id="tblCart" layoutX="43.0" layoutY="440.0" opacity="0.76" prefHeight="235.0" prefWidth="936.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="129.0" text="Code" />
+          <TableColumn fx:id="colDiscription" prefWidth="133.0" text="Discription" />
+            <TableColumn fx:id="colQty" prefWidth="108.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="147.0" text="Unit Price" />
+            <TableColumn fx:id="colDiscount" prefWidth="163.0" text="Discount" />
+            <TableColumn fx:id="coltotal" prefWidth="112.0" text="Total" />
+            <TableColumn fx:id="colAction" prefWidth="143.0" text="Action" />
+        </columns>
+      </TableView>
+      <Line endX="-100.0" endY="149.0" layoutX="532.0" layoutY="132.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.13298001885414124" green="0.1544245481491089" blue="0.7763158082962036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.12037037312984467" blue="0.12037037312984467" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <JFXButton fx:id="btnOrders" layoutX="1027.0" layoutY="115.0" onAction="#btnOrderOnAction" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: black;" text="SEE ORDERS">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8684210777282715" green="0.8684210777282715" blue="0.8684210777282715" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblDate" layoutX="200.0" layoutY="30.0" prefHeight="17.0" prefWidth="85.0" text="aa" textFill="WHITE" />
+      <Label fx:id="lblTime" layoutX="314.0" layoutY="30.0" prefHeight="17.0" prefWidth="85.0" text="Label" textFill="WHITE" />
+   </children>
+</AnchorPane>

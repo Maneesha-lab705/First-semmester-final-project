@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="339.0" prefWidth="638.0" style="-fx-background-color: BLACK;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.LogingFormController">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="424.0" fitWidth="669.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym.gif" />
+         </image>
+      </ImageView>
+      <Label blendMode="SCREEN" layoutX="329.0" layoutY="75.0" opacity="0.26" prefHeight="225.0" prefWidth="262.0" style="-fx-background-color: white;" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <effect>
+            <ColorAdjust brightness="-0.28" contrast="-0.05" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.32894736528396606" green="0.25737085938453674" blue="0.25737085938453674" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="357.0" layoutY="117.0" onAction="#txtUserNameOnAction" prefHeight="29.0" prefWidth="192.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Text layoutX="208.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME !">
+         <font>
+            <Font name="Serif Bold" size="40.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.9289099526066351" endY="0.46445497630331756" startX="0.27488151658767773" startY="0.4597156398104265">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.8657407164573669" blue="0.8657407164573669" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.48780487804878053">
+                     <color>
+                        <Color red="0.2367202788591385" green="0.32445988059043884" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8871951219512194">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.41163498163223267" green="0.26059940457344055" blue="0.9078947305679321" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton layoutX="320.0" layoutY="262.0" onAction="#ForgetOnAction" prefHeight="17.0" prefWidth="140.0" text="Forget  password ?" textFill="#e1e0e0">
+         <font>
+            <Font size="11.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="460.0" layoutY="262.0" onAction="#CreateAccountOnAction" prefHeight="25.0" prefWidth="134.0" text="CREATE  ACCOUNT" textFill="#e1e0e0">
+         <font>
+            <Font size="9.0" />
+         </font></JFXButton>
+      <Text fill="#f7f7ff" layoutX="368.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font name="Ebrima Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f7ff" layoutX="364.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Ebrima Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button blendMode="COLOR_DODGE" layoutX="478.0" layoutY="209.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="26.0" prefWidth="63.0" stylesheets="@../style/Style.css" text="Loging" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="SCREEN" fitHeight="53.0" fitWidth="69.0" layoutX="372.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-facebook-48.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="SCREEN" fitHeight="53.0" fitWidth="69.0" layoutX="501.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-google-48.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="455.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" wrappingWidth="25.203125" />
+      <JFXButton layoutX="372.0" layoutY="316.0" onAction="#btnFacebookOnAction" opacity="0.0" prefHeight="39.0" prefWidth="53.0" text="Button" />
+      <JFXButton layoutX="505.0" layoutY="316.0" onAction="#btnGoogleOnAction" opacity="0.0" prefHeight="39.0" prefWidth="45.0" text="Button" />
+      <Text fill="#f8f8f8" layoutX="453.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Line endX="-77.66665649414062" layoutX="527.0" layoutY="275.0" startX="-89.0" />
+      <Line endX="-77.33334350585938" layoutX="562.0" layoutY="275.0" startX="-89.0" />
+      <ProgressBar fx:id="porBar" layoutX="2.0" layoutY="391.0" onDragDetected="#proBarOnAction" prefHeight="18.0" prefWidth="429.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="1.0" hue="-0.09" saturation="-0.33" />
+         </effect></ProgressBar>
+      <Line endX="262.0" layoutX="271.0" layoutY="59.0" startX="-152.0" stroke="WHITE" />
+      <PasswordField fx:id="txtPassword" layoutX="358.0" layoutY="175.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="192.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+   </children>
+</AnchorPane>

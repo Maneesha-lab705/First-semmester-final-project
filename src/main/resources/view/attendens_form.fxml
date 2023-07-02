@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="676.0" prefWidth="1211.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.AttendensFormController">
+   <children>
+      <ImageView fitHeight="659.0" fitWidth="847.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/undraw_Male_avatar_g98d%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmployeeId" layoutX="116.0" layoutY="150.0" onKeyReleased="#keyUpOnAction" prefHeight="44.0" prefWidth="269.0" />
+      <TableView fx:id="tblPorA" layoutX="92.0" layoutY="374.0" prefHeight="203.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="tblId" prefWidth="99.0" text="ID" />
+          <TableColumn fx:id="tblDate" prefWidth="85.0" text="DATE" />
+            <TableColumn fx:id="tblTime" prefWidth="121.33334350585938" text="TIME" />
+            <TableColumn fx:id="tblAttendens" prefWidth="174.0" text="PRESANT OR ABSON" />
+        </columns>
+      </TableView>
+      <Text layoutX="519.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE :">
+         <font>
+            <Font name="Constantia" size="27.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="796.0" layoutY="504.0" onAction="#btnSaveOnAction" prefHeight="65.0" prefWidth="123.0" style="-fx-background-color: BLACK;" text="SAVE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.9342105388641357" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <Label fx:id="lbldate" layoutX="626.0" layoutY="59.0" prefHeight="17.0" prefWidth="76.0" text="Label" />
+      <JFXButton layoutX="106.0" layoutY="238.0" onAction="#btnScanOnAction" prefHeight="65.0" prefWidth="144.0" text="SCAN QR" />
+      <Text layoutX="116.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE ID :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="491.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROSANT OR ABSON:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="711.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME">
+         <font>
+            <Font name="Constantia" size="27.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="126.0" layoutY="596.0" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: green;" text="BACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblTime" layoutX="788.0" layoutY="59.0" prefHeight="17.0" prefWidth="76.0" text="Label" />
+      <JFXComboBox fx:id="comEmployee" layoutX="113.0" layoutY="226.0" onAction="#comEmployeeOnAction" prefHeight="25.0" prefWidth="253.0" />
+      <ImageView fitHeight="51.0" fitWidth="66.0" layoutX="50.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-go-back.gif" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="comPORA" layoutX="491.0" layoutY="160.0" prefHeight="25.0" prefWidth="185.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15883894264698029" green="0.08954678475856781" blue="0.9210526347160339" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.24074074625968933" blue="0.24074074625968933" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+   </children>
+</AnchorPane>

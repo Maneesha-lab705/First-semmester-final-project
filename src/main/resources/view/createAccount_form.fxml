@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="323.0" prefWidth="410.0" style="-fx-background-color: BLUe;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.CreateAccountFormController">
+   <children>
+      <ImageView fitHeight="479.0" fitWidth="503.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym%202%20body.jpg" />
+         </image></ImageView>
+      <TextField fx:id="txtUserId" layoutX="27.0" layoutY="126.0" />
+      <TextField fx:id="txtNic" layoutX="27.0" layoutY="181.0" />
+      <TextField fx:id="txtEmail" layoutX="27.0" layoutY="275.0" prefHeight="25.0" prefWidth="204.0" />
+      <TextField fx:id="txtName" layoutX="239.0" layoutY="126.0" />
+      <TextField fx:id="txtPassword" layoutX="27.0" layoutY="331.0" prefHeight="25.0" prefWidth="204.0" />
+      <Text fill="#fffafa" layoutX="25.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font></Text>
+      <Text fill="#fffafa" layoutX="239.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font></Text>
+      <Text fill="#fffafa" layoutX="27.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font></Text>
+      <Text fill="#fffafa" layoutX="30.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font></Text>
+      <Text fill="#fffafa" layoutX="30.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font></Text>
+      <JFXButton layoutX="411.0" layoutY="425.0" onAction="#SaveOnAction" text="SAVE" textFill="WHITE" />
+      <JFXButton layoutX="328.0" layoutY="425.0" onAction="#ExiteOnAction" text="EXITE" textFill="WHITE" />
+   </children>
+</AnchorPane>

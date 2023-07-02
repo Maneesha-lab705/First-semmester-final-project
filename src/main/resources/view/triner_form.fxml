@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="718.0" prefWidth="1206.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.TrinerFormController">
+   <children>
+      <ImageView fitHeight="651.0" fitWidth="891.0" layoutY="-1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym1.jpg" />
+         </image>
+      </ImageView>
+      <Polygon layoutX="50.0" layoutY="603.0" opacity="0.61" points="-50.0, 40.0, 191.0, -50.0, 680.0, -507.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.14329268292682926">
+                     <color>
+                        <Color red="0.007322124671190977" green="0.006213450338691473" blue="0.03947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9174870252609253" green="0.9169103503227234" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Label layoutX="2.0" layoutY="2.0" opacity="0.32" prefHeight="718.0" prefWidth="1206.0" style="-fx-background-color: #00077F;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtId" layoutX="99.0" layoutY="141.0" onAction="#SerchOnAction" onMouseClicked="#idclickOnAction" prefHeight="36.0" prefWidth="231.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtLastName" layoutX="559.0" layoutY="174.0" onMouseClicked="#lNameClickOnAction" prefHeight="36.0" prefWidth="387.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtContact" layoutX="99.0" layoutY="305.0" onMouseClicked="#contactClickOnAction" prefHeight="48.0" prefWidth="295.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtNic" layoutX="563.0" layoutY="248.0" onMouseClicked="#nicClickOnAction" prefHeight="49.0" prefWidth="377.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Text fill="#eee8e8" layoutX="104.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRINER ID">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <Text fill="#eee8e8" layoutX="563.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <Text fill="#eee8e8" layoutX="108.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <Text fill="#eee8e8" layoutX="570.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <Text fill="#eee8e8" layoutX="569.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPECIFC TYPE">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <JFXButton layoutX="824.0" layoutY="554.0" onAction="#SaveOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: WHITE;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SAVE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.10980000346899033" green="0.147910475730896" blue="0.6100000143051147" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <JFXButton layoutX="656.0" layoutY="554.0" onAction="#DeleteOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: WHITE;" styleClass="edge-button" stylesheets="@../style/Style.css" text="DELETE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.190476194024086" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <JFXButton layoutX="488.0" layoutY="554.0" onAction="#updateOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: WHITE;" styleClass="edge-button" stylesheets="@../style/Style.css" text="UPDATE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.190476194024086" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <JFXButton layoutX="335.0" layoutY="554.0" onAction="#ClearOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: WHITE;" styleClass="edge-button" stylesheets="@../style/Style.css" text="CLEAR">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.190476194024086" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <Text layoutX="317.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" TRAINER FORM">
+         <fill>
+            <LinearGradient endX="0.8625592417061612" endY="0.8815165876777251">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9122806787490845" blue="0.9122806787490845" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7631579041481018" green="0.39217835664749146" blue="0.39217835664749146" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Georgia" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtFirstName" layoutX="99.0" layoutY="220.0" onMouseClicked="#fNameClickOnAction" prefHeight="48.0" prefWidth="295.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Text fill="#eee8e8" layoutX="108.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <TextField fx:id="txtAddress" layoutX="98.0" layoutY="383.0" onMouseClicked="#addressClickOnAction" prefHeight="49.0" prefWidth="295.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Text fill="#eee8e8" layoutX="109.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Text>
+      <Label layoutX="557.0" layoutY="333.0" prefHeight="74.0" prefWidth="307.0" style="-fx-background-color: WHITE;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <JFXComboBox fx:id="ComExTypeId" layoutX="574.0" layoutY="353.0" onAction="#ComTypeOnAction" prefHeight="33.0" prefWidth="274.0" promptText="SPECIFIC TYPE">
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5657894611358643" green="0.03667154163122177" blue="0.03667154163122177" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6710526347160339" green="0.07766813039779663" blue="0.07766813039779663" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label fx:id="extypeLabal" layoutX="623.0" layoutY="468.0" prefHeight="36.0" prefWidth="402.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="473.0" text="NAME OF EXSERCISE ID:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Line endX="282.0" layoutX="365.0" layoutY="46.0" startX="-119.0" stroke="#eeeeee" />
+   </children>
+</AnchorPane>

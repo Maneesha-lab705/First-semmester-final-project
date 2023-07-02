@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="717.0" prefWidth="1364.0" style="-fx-background-color: #12132E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.DashbordFormController">
+   <children>
+      <ImageView fitHeight="676.0" fitWidth="1211.0" layoutX="163.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/DASHBORD.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="676.0" layoutX="1.0" layoutY="51.0" opacity="0.66" stroke="BLACK" strokeType="INSIDE" width="159.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.23848886787891388" green="0.21631334722042084" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutY="2.0" opacity="0.59" prefHeight="51.0" prefWidth="1375.0" style="-fx-background-color: BLACK;" stylesheets="@../style/Style.css">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.5023696682464455">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7105262875556946" green="0.1315789520740509" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.14839999377727509" green="0.5299999713897705" blue="0.3073999881744385" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Polygon layoutX="165.0" layoutY="376.0" opacity="0.32" points="-50.0, 40.0, 16.0, -11.0, 854.0, -156.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6315789222717285" green="0.06432748585939407" blue="0.06432748585939407" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6615853658536586">
+                     <color>
+                        <Color red="0.04687703028321266" green="0.019675925374031067" blue="0.22368420660495758" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7621951219512195">
+                     <color>
+                        <Color red="0.2199999988079071" green="0.01979999989271164" blue="0.08081333339214325" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9194630872483222">
+                     <color>
+                        <Color red="0.15789473056793213" green="0.010233918204903603" blue="0.010233918204903603" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9329268292682927">
+                     <color>
+                        <Color red="0.09210526198148727" green="0.1458333283662796" blue="0.5526315569877625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09210526198148727" green="0.1458333283662796" blue="0.5526315569877625" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Polygon>
+      <AnchorPane fx:id="LoadContex" layoutX="164.0" layoutY="50.0" prefHeight="676.0" prefWidth="1211.0">
+         <children>
+            <Polygon layoutX="775.0" layoutY="379.0" opacity="0.27" points="98.0, 244.0, 62.0, 168.0, 98.0, -14.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.20853080568720378">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0416666679084301" green="0.2720760107040405" blue="0.4736842215061188" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5" green="0.023148147389292717" blue="0.023148147389292717" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+            <Text fill="#e4e0e0" layoutX="9.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" EACH NEW DAY IS A NEW ">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Text>
+            <Text fill="#e1d3d3" layoutX="35.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPPORTUNITY TO IMPROVE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Text>
+            <Text fill="#dac7c7" layoutX="127.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR SELF.">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Text>
+            <Text fill="#b5c336" layoutX="351.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAKE IT.">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Text>
+            <Text fill="#dfe1d0" layoutX="282.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AND">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Text>
+            <Text fill="#c1d71f" layoutX="322.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOST OF IT">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Text>
+            <Text layoutX="460.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASH BORD" wrappingWidth="290.91668701171875">
+               <font>
+                  <Font name="Impact" size="55.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <JFXButton layoutX="1013.0" layoutY="98.0" onAction="#btnGooglOnAction" opacity="0.0" prefHeight="49.0" prefWidth="49.0" text="Button" />
+            <JFXButton layoutX="1037.0" layoutY="179.0" onAction="#btnFbOnAction" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+            <JFXButton layoutX="1023.0" layoutY="247.0" onAction="#btnMailOnAction" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+            <Label layoutX="43.0" layoutY="36.0" prefHeight="68.0" prefWidth="61.0" text="20%" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ProgressIndicator layoutX="95.0" layoutY="45.0" prefHeight="200.0" prefWidth="150.0" />
+            <Line endX="482.33331298828125" layoutX="404.0" layoutY="68.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.5023696682464455">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5199999809265137" green="0.15080000460147858" blue="0.15080000460147858" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <ImageView fitHeight="290.0" fitWidth="307.0" layoutX="197.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/6725081.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="117.0" fitWidth="232.0" layoutX="525.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/2949177.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="147.0" layoutX="727.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/3197164.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="17.0" text="MEMBERS :" textFill="#fcfcfc">
+               <font>
+                  <Font name="Georgia Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="127.0" text="TRAINERS :" textFill="#fcfcfc">
+               <font>
+                  <Font name="Georgia Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTriners" layoutX="43.0" layoutY="162.0" prefHeight="17.0" prefWidth="41.0" text="10" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="90.0" layoutY="162.0" text="\%" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ProgressIndicator layoutX="121.0" layoutY="154.0" prefHeight="200.0" prefWidth="150.0" />
+            <ProgressIndicator layoutX="294.0" layoutY="288.0" prefHeight="19.0" prefWidth="19.0" />
+         </children></AnchorPane>
+      <JFXButton alignment="TOP_LEFT" layoutX="25.0" layoutY="284.0" onAction="#TrinerOnAction" prefHeight="26.0" prefWidth="90.0" text="TRINER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton alignment="TOP_LEFT" layoutX="27.0" layoutY="391.0" onAction="#OrderOnAction" prefHeight="39.0" prefWidth="102.0" text="ORDER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton alignment="TOP_LEFT" layoutX="26.0" layoutY="336.0" onAction="#EmployeeOnAction" prefHeight="39.0" prefWidth="119.0" text="EMPLOYEE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton alignment="TOP_LEFT" layoutX="25.0" layoutY="443.0" onAction="#ItemOnAction" prefHeight="35.0" prefWidth="90.0" text="ITEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton alignment="TOP_LEFT" layoutX="23.0" layoutY="232.0" onAction="#MamberOnAction" prefHeight="39.0" prefWidth="110.0" styleClass="edge-button" stylesheets="@../style/Style.css" text="MEMBER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></JFXButton>
+      <JFXButton alignment="TOP_LEFT" layoutX="26.0" layoutY="553.0" onAction="#PaymentOnAction" prefHeight="34.0" prefWidth="119.0" text="PAYMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="1062.0" layoutY="15.0" onAction="#LogoutOnAction" prefHeight="35.0" prefWidth="90.0" text="LOGOUT">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9736841917037964" green="0.9736841917037964" blue="0.9736841917037964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.43981480598449707" green="0.43981480598449707" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <ImageView blendMode="LIGHTEN" fitHeight="153.0" fitWidth="261.0" layoutX="-1.0" layoutY="54.0" opacity="0.96" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/zoetic combat.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="TOP_LEFT" layoutX="26.0" layoutY="496.0" onAction="#btnShedulOnAction" prefHeight="39.0" prefWidth="119.0" text="SHEDEUL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton alignment="TOP_LEFT" layoutX="26.0" layoutY="609.0" onAction="#AttendensOnAction" prefHeight="39.0" prefWidth="141.0" text="ATTENDENS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="56.0" layoutY="20.0" text="DATE :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldat" layoutX="115.0" layoutY="15.0" prefHeight="17.0" prefWidth="141.0" text="sdsd" textFill="#ebebeb">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <JFXButton alignment="TOP_LEFT" layoutX="26.0" layoutY="659.0" onAction="#btnExerciseOnAction" text="EXERSICE " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="251.0" layoutY="21.0" text="TIME:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="307.0" layoutY="17.0" prefHeight="17.0" prefWidth="77.0" text="sds" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="58.0" layoutX="1028.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-logout.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblEmail" layoutX="13.0" layoutY="183.0" prefHeight="17.0" prefWidth="110.0" text="Label" textFill="WHITE" />
+      <Label fx:id="labalUserName" layoutX="11.0" layoutY="212.0" prefHeight="17.0" prefWidth="141.0" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="34.0" fitWidth="58.0" layoutX="1224.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-go-back.gif" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1265.0" layoutY="16.0" onAction="#HomeOnAction" prefHeight="25.0" prefWidth="75.0" text="HOME">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9736841917037964" green="0.9736841917037964" blue="0.9736841917037964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18518517911434174" green="0.3888888955116272" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <Line endX="55.0" layoutX="97.0" layoutY="229.0" startX="-85.5" />
+   </children>
+</AnchorPane>

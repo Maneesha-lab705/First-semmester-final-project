@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="718.0" prefWidth="1206.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.ShowAttendsFormController">
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="905.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="4.0" opacity="0.14" prefHeight="718.0" prefWidth="1206.0" style="-fx-background-color: blue;" />
+      <TableView fx:id="tblMemberCart" layoutX="116.0" layoutY="228.0" opacity="0.69" prefHeight="382.0" prefWidth="380.0">
+        <columns>
+          <TableColumn fx:id="tblId" prefWidth="178.0" text="Id" />
+          <TableColumn fx:id="tblName" prefWidth="222.0" text="Name" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblEmployeeCart" layoutX="749.0" layoutY="235.0" opacity="0.69" prefHeight="371.0" prefWidth="356.0">
+         <columns>
+            <TableColumn fx:id="tblEId" prefWidth="185.0" text="Id" />
+            <TableColumn fx:id="tblEName" prefWidth="170.0" text="Name" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="211.0" layoutY="122.0" onAction="#btnMemberOnAction" text="MEMBERS ATTENDS" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="792.0" layoutY="122.0" onAction="#btnEmployeeONAction" text="EMPLOYEES ATTENDS" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </JFXButton>
+      <Line endX="219.0" layoutX="205.0" layoutY="168.0" startX="-30.5" stroke="WHITE" />
+      <Line endX="209.0" layoutX="799.0" layoutY="169.0" startX="-30.5" stroke="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="128.0" layoutX="640.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

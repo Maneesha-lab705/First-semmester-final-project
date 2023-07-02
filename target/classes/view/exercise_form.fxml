@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="676.0" prefWidth="1211.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.ExerciseFormController">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="884.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gym1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="8.0" opacity="0.09" prefHeight="697.0" prefWidth="1156.0" style="-fx-background-color: blue;" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtExId" layoutX="104.0" layoutY="149.0" onMouseClicked="#clickOnAction" prefHeight="38.0" prefWidth="248.0" />
+      <TextField fx:id="txtHourlyId" layoutX="103.0" layoutY="315.0" prefHeight="38.0" prefWidth="218.0" />
+      <TextField fx:id="txtExNameId" layoutX="102.0" layoutY="233.0" prefHeight="38.0" prefWidth="598.0" />
+      <Text fill="WHITE" layoutX="105.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="exercise Id :" wrappingWidth="119.1917724609375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="106.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="exercise Name :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="105.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hourly Fee :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="994.0" layoutY="539.0" onAction="#btnUpdateOnAction" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="994.0" layoutY="457.0" onAction="#btnSerchOnAction" text="SERCH" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="992.0" layoutY="391.0" onAction="#btnDeleteOnAction" text="DELETE" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="992.0" layoutY="321.0" onAction="#btnSaveOnAction" text="SAVE" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <Line endX="100.0" layoutX="1038.0" layoutY="365.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.023148147389292717" blue="0.023148147389292717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.22561728954315186" green="0.10648148506879807" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1037.0" layoutY="435.0" startX="-57.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.023148147389292717" blue="0.023148147389292717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.22561728954315186" green="0.10648148506879807" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="43.0" layoutX="1043.0" layoutY="502.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.023148147389292717" blue="0.023148147389292717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.22561728954315186" green="0.10648148506879807" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="100.0" layoutX="1053.0" layoutY="584.0" startX="-50.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.023148147389292717" blue="0.023148147389292717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.22561728954315186" green="0.10648148506879807" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+   </children>
+</AnchorPane>

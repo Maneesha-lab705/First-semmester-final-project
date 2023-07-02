@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.ReportFormController">
+   <children>
+      <JFXButton fx:id="btnprint" layoutX="213.0" layoutY="151.0" onAction="#btnPrintOnAction" prefHeight="69.0" prefWidth="174.0" style="-fx-background-color: blue;" styleClass="edge-button" stylesheets="@../style/Style.css" text="PRINT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

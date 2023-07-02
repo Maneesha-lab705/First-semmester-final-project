@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="676.0" prefWidth="1211.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fitcore.Controller.CreateSheduleFormController">
+   <children>
+      <ImageView fitHeight="412.0" fitWidth="564.0" layoutX="24.0" layoutY="4.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/zoetic%20combat.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtTimeId" layoutX="149.0" layoutY="215.0" prefHeight="25.0" prefWidth="153.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtShedulId" layoutX="149.0" layoutY="114.0" prefHeight="25.0" prefWidth="262.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Text layoutX="83.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="WHITE" layoutX="83.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ex Id :">
+         <font>
+            <Font size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="33.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shedule Id :">
+         <font>
+            <Font size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="2.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Dueration :">
+         <font>
+            <Font size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="9.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shedul name  :">
+         <font>
+            <Font size="19.0" />
+         </font></Text>
+      <JFXButton alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="994.0" layoutY="72.0" onAction="#btnSaveOnAction" prefHeight="41.0" prefWidth="129.0" style="-fx-background-color: white;" text="save">
+         <font>
+            <Font size="17.0" />
+         </font></JFXButton>
+      <TextField fx:id="txtSnameID" layoutX="149.0" layoutY="162.0" prefHeight="25.0" prefWidth="432.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <JFXTextArea fx:id="txtAriaId" layoutX="83.0" layoutY="503.0" prefHeight="102.0" prefWidth="570.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2222222238779068" green="0.05847953259944916" blue="0.5263158082962036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.2222222238779068" green="0.05847953259944916" blue="0.5263158082962036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6710526347160339" green="0.031067252159118652" blue="0.031067252159118652" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextArea>
+      <Text fill="WHITE" layoutX="61.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inclued of shedule  :" wrappingWidth="240.125">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <JFXButton alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="994.0" layoutY="141.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="129.0" style="-fx-background-color: white;" text="DELETE" />
+      <JFXButton alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="994.0" layoutY="219.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="129.0" style="-fx-background-color: white;" text="UPDATE" />
+      <JFXButton alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="994.0" layoutY="285.0" onAction="#btnGetAllOnAction" prefHeight="41.0" prefWidth="129.0" style="-fx-background-color: white;" text="GET ALL" />
+      <JFXComboBox fx:id="exId" layoutX="152.0" layoutY="61.0" onAction="#exTypeOnAction" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: white;" />
+      <ImageView blendMode="LIGHTEN" fitHeight="124.0" fitWidth="124.0" layoutX="997.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-shedule-60.png" />
+         </image>
+      </ImageView>
+      <Line endX="41.0" endY="391.0" layoutX="950.0" layoutY="87.0" startX="41.0" startY="-17.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.004629629664123058" blue="0.004629629664123058" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5289961099624634" green="0.4941520392894745" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="134.0" endY="545.0" layoutX="1005.0" layoutY="108.0" startX="134.0" startY="-54.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.004629629664123058" blue="0.004629629664123058" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5289961099624634" green="0.4941520392894745" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="822.0" layoutX="162.0" layoutY="487.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.004629629664123058" blue="0.004629629664123058" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5289961099624634" green="0.4941520392894745" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="92.5" endY="43.5" layoutX="1046.0" layoutY="610.0" startX="-980.0" startY="43.5">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.004629629664123058" blue="0.004629629664123058" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5289961099624634" green="0.4941520392894745" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="-72.5" endY="-20.5" layoutX="134.0" layoutY="508.0" startX="-72.5" startY="144.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Label fx:id="lblex" layoutX="435.0" layoutY="65.0" prefHeight="17.0" prefWidth="299.0" textFill="#fcfcfc" />
+   </children>
+</AnchorPane>
